@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0;">
+    <link rel="stylesheet" href="../files/project.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        $(function () {
+            $("#header").load("../files/projectheader.html");
+            $("#footer").load("../files/projectfooter.html");
+        });
+    </script>
+</head>
+<div id="header"></div>
+
+<body>
+
+    <img class="centered" src="./portfoliofiles/robotarm/robotarm_thumb.jpg" style="height:120">
+    </a>
+
+    <div id="titlebar">
+        <t1>Max Kapczynski, Ethan Glassman
+            <br>
+        </t1>
+        <t1> Robot Arm Project
+            <br>
+        </t1>
+        <t2> With thanks to the Washington University student chapter
+            <br> of ASME for their generous financial support.</t2>
+        </t1>
+    </div>
+
+    <div id="aboutproject">
+        <p><span class="aboutheading">Project Background:</span> In Spring of 2015 I was taking courses in Robotics Dynamics and Control and Robotics Lab, and I wanted to get a chance to practice my skills in design, component selection, and programming robotic systems. I teamed up with Max Kapcznski who I had worked with on <a href="./seniordesign.html">my senior design project</a> and we started designing a robot arm. Our goal is to pick up a 12oz can a placed anywhere in reach of the arm.
+        </p>
+    </div>
+
+    <div class="projectstep">
+        <div class="projectimage">
+            <a href="./portfoliofiles/robotarm/robotarm.png"><img class="imagelink" src="./portfoliofiles/robotarm/robotarm_thumb.jpg" alt="Initial CAD."> </a>
+        </div>
+
+        <div class="textblock">
+            <p>
+                First Solidworks CAD to flush out the concepts and ensure reasonable sizes. Click <a href="./robotcad1.html">here for a 3D view of this CAD.</a> With appreciation to Max Kapczynski for his CAD work.
+            </p>
+        </div>
+    </div>
+
+    <div class="projectstep">
+        <div class="projectimage">
+            <a href="./portfoliofiles/robotarm/FirstMATLABModel.png"><img class="imagelink" src="./portfoliofiles/robotarm/FirstMATLABModel_thumb.jpg" alt="Initial MATLAB model."> </a>
+        </div>
+        <div class="textblock">
+            <p>
+                At this point it made sense to build a MATLAB simulated model of the robot arm to ensure that we would be able to have all of the degrees of freedom we needed in order to pick up our beverage can from any location or orientation in reach of the base.
+            </p>
+        </div>
+    </div>
+
+
+    <div class="projectstep">
+        <div class="projectimage">
+            <a href="./portfoliofiles/robotarm/ElectronicsLayout.png"><img class="imagelink" src="./portfoliofiles/robotarm/ElectronicsLayout_thumb.jpg" alt="Initial MATLAB model."> </a>
+        </div>
+        <div class="textblock">
+            <p>
+                Before we could dig deeper into component selection, the electronics system flow had to be well defined. The easiest way of doing this was to build an electronics layout map and be sure that every signal we wanted was diagrammed.
+            </p>
+        </div>
+    </div>
+
+    <div class="projectstep">
+        <div class="projectimage">
+            <a href="./portfoliofiles/robotarm/95RobotArmRender.jpg"><img class="imagelink" src="./portfoliofiles/robotarm/95RobotArmRender_thumb.jpg" alt="95% Complete CAD."> </a>
+        </div>
+
+        <div class="textblock">
+            <p>
+                Updated Solidworks CAD to replace "reasonable size" components with actual CAD models of servos and mechanical parts that can be turned into drawings to machine parts from. Click <a href="./robotcad95.html">here for a 3D view of this CAD.</a> At this point, the CAD is ~95% done, and can be used for center of mass, simulations for structural integrity, and modelling static and dynamic forces to be sure the arm is sufficiently structural. We found some issues to rework.
+            </p>
+        </div>
+    </div>
+
+
+    <div class="projectstep">
+        <div class="projectimage">
+            <a href="./portfoliofiles/robotarm/RobotArm5920.png"><img class="imagelink" src="./portfoliofiles/robotarm/RobotArm5920_thumb.jpg" alt="HighResRender."> </a>
+        </div>
+
+        <div class="textblock">
+            <p>
+                The modelling of forces suggested the upper arm would be insufficiently stiff, and would require a stronger structure. A triangle struture made sense to provide much improved resistance to side-to-side deflections, as well as torsional problems. We also took this opportunity to do a higher quality render.
+            </p>
+        </div>
+    </div>
+
+
+    <div class="projectstep">
+        <div class="projectimage">
+            <a href="./portfoliofiles/robotarm/DisplacementWWoSlot.png"><img class="imagelink" src="./portfoliofiles/robotarm/DisplacementWWoSlot_thumb.png" alt="FEA Wrist Displacement."> </a>
+        </div>
+
+        <div class="textblock">
+            <p>
+                Further FEA analysis on specific components was performed.  In this case, we are applying a worst-case load of 2lb (About 2.67x factor of safety) to see if there is unacceptable displacement of the end effector.  We measured a worst case displacement of about 0.3mm with lightening slot, and 0.2mm without.  While not perfect, this is pretty good, and likely less significant than slop from manual machining (for example) or the resolution of the closed loop sensors.
+            </p>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
+
+<div id="footer"></div>
+
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-58514083-1', 'auto');
+    ga('require', 'displayfeatures');
+    ga('require', 'linkid', 'linkid.js');
+    ga('send', 'pageview');
+</script>

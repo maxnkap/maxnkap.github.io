@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0;">
+    <link rel="stylesheet" href="../files/project.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        $(function () {
+            $("#header").load("../files/projectheader.html");
+            $("#footer").load("../files/projectfooter.html");
+        });
+    </script>
+</head>
+<div id="header"></div>
+
+<body>
+
+
+    <img class="centered" src="./portfoliofiles/trebuchet/trebuchet_thumb.jpg" style="height:120">
+    </a>
+    <div id="titlebar">
+        <t1>Trebuchet Project.
+            <br>
+        </t1>
+    </div>
+
+    <div id="aboutproject">
+        <p><span class="aboutheading">Project Background:</span> The Elon student chapter of the Society of Physics Students uses a pumpkin-chunking trebuchet for community outreach. We have been doing this community outreach since the fall of 2007. By inviting community members to bring their pumpkins the weekend after Halloween, and asking for a canned-food donation; the SPS provides fun and entertainment for the community, while collecting canned-food to distribute to needy members of the community.
+        </p>
+        <p>
+            As the engineering student advisor to the Elon student chapter of the Society of Physics Students, I worked on the trebuchet for two years, with main collaboration from Jesse Clark. Before this, the Society of Physics Students had built a much smaller trebuchet, but it had fallen into disrepair and there was no documentation on how to fix it. During the fall of 2010, we built the first incarnation of the current trebuchet, with some issues around structural integrity, and launch performance.
+            <br> In the fall of 2011, we hoped to improve structural integrity with a much larger diameter pivot bar, requiring some rebuild of the trebuchet such that the larger diameter pivot bar did not break through the launch arm or supporting uprights. Finite element analysis was done at the end of fall 2011 to explore some ways of improving launch performance, and documentation was left for later years.
+        </p>
+    </div>
+
+    <div class="projectstep">
+        <div class="projectimage">
+            <a href="./portfoliofiles/trebuchet/treb2008.jpg" class="imagelink"> <img class="imagelink" src="./portfoliofiles/trebuchet/treb2008_thumb.jpg" alt="The Trebuchet in 2008."> </a>
+        </div>
+        <div class="textblock">
+            <p>
+                The trebuchet in 2008, undocumented and so we had no easy way to rebuild it.
+            </p>
+        </div>
+    </div>
+
+
+    <div class="projectstep">
+        <div class="projectimage">
+            <a href="./portfoliofiles/trebuchet/treb2010.jpg" class="imagelink"> <img class="imagelink" src="./portfoliofiles/trebuchet/treb2010_thumb.jpg" alt="The Trebuchet in 2010."> </a>
+        </div>
+        <div class="textblock">
+            <p>
+                The trebuchet in 2010, extensive deflection is visible. This general form factor was stable, but some structural upgrades were necessary.
+            </p>
+        </div>
+    </div>
+
+    <div id="aboutproject">
+        <p>
+            At this point, I had designed a trebuchet that was close to useable, but required some strengthening in order to be useable long term. The main issue we ran into was the bar the throwing arm was rotating about bent badly. I wanted to increase from a 0.75 inch O.D. steel shaft to a 1.5 inch O.D. steel shaft, but wanted to be sure that we would not make the throwing arm (a 4x4 from the hardware store) excessively weak.
+        </p>
+    </div>
+
+    <div class="projectstep">
+        <div class="projectimage">
+            <a href="./portfoliofiles/trebuchet/StressAnalysis.png" class="imagelink"> <img class="imagelink" src="./portfoliofiles/trebuchet/StressAnalysis_thumb.jpg" alt="Trebuchet FEA."> </a>
+        </div>
+        <div class="textblock">
+            <p>
+                Performing an FEA in Solidworks to determine if the structural integrity of the beam was sufficient without additional reinforcement structures. The beam stayed intact, but had a significant increase in the deformation.
+            </p>
+        </div>
+    </div>
+
+
+    <div class="projectstep">
+        <div class="projectimage">
+            <a href="./portfoliofiles/trebuchet/reinforcements.jpg" class="imagelink"> <img class="imagelink" src="./portfoliofiles/trebuchet/reinforcements_thumb.jpg" alt="Reinforced beam around the rotation bar."> </a>
+        </div>
+        <div class="textblock">
+            <p>
+                As a result of this large deflection we choose to support the new pivot hole with a large 4x4 brace and a smaller 2x4 brace on the bottom and a second smaller 2x4 brace on the top, bolted in place with 4 x 1/2” bolts. We choose the 6” of bracing on the bottom given the location and direction of the large displacement. This has shown to be sufficient support.
+            </p>
+        </div>
+    </div>
+
+    <div class="projectstep">
+        <div class="projectimage">
+            <a href="./portfoliofiles/trebuchet/trebuchet.jpg" class="imagelink"> <img class="imagelink" src="./portfoliofiles/trebuchet/trebuchet_thumb.jpg" alt="Final Trebuchet."> </a>
+        </div>
+        <div class="textblock">
+            <p>
+                At this point, we rebuilt the trebuchet, choosing to focus on ensuring that the trebuchet does not fall apart while launching. The performance was a little lacking, but the structure was solid.
+            </p>
+        </div>
+    </div>
+
+    <div id="aboutproject">
+        <p>
+            From here, I spent some time redesigning the throwing arm to try and improve performance. We have already used the longest 4x4 available at a hardware store, and so one of the best ways we could improve the launch perfomance was to reduce the weight of the pumpkin side of the throwing arm. A few FEA analyses were done to determine the feasibility and expected increase in performance from lightening the throwing arm. Although the reduction in weight was somewhat minimal, there appeared to be no adverse effects on the strength of the beam, and so I strongly recommended it to the Society of Physics Students to pursue after I transferred.
+        </p>
+    </div>
+
+
+</body>
+
+</html>
+
+<div id="footer"></div>
+
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-58514083-1', 'auto');
+    ga('require', 'displayfeatures');
+    ga('require', 'linkid', 'linkid.js');
+    ga('send', 'pageview');
+</script>
