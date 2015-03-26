@@ -1,10 +1,11 @@
 div#navbar {
-    width: 390px;
+    width: 300px;
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     font-family: Verdana, Geneva, Arial, sans-serif;
     padding-bottom: 20px;
+	text-align: center;
 }
 
 div#titlebar t1{
@@ -31,6 +32,7 @@ div#navbar n1 {
     margin-bottom: 5px;
     padding-left: 2.5px;
     padding-right: 2.5px;
+	text-align: center;
 }
 
 div.projectimage {
@@ -180,10 +182,11 @@ div#footer {
     padding-top: 20px;
     font-family: Verdana, Geneva, Arial, sans-serif;
     padding-bottom: 15px;
-    width: 320px;
+    width: 400px;
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
+	text-align: center;
 }
 
 div#footer n1 {
